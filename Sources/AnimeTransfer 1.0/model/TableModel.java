@@ -9,30 +9,30 @@ public class TableModel {
 
 	private BooleanProperty CopiarProperty;
 	private StringProperty ArquivoProperty;
-	
+
 	public TableModel() {
-		
+
 	}
-	
-	public TableModel(Boolean copiarProperty, String arquivoProperty) {
+
+	public TableModel(final Boolean copiarProperty, final String arquivoProperty) {
 		this.CopiarProperty = new SimpleBooleanProperty(copiarProperty);
 		this.ArquivoProperty = new SimpleStringProperty(arquivoProperty);
-	}
-
-	public BooleanProperty CopiarProperty() {
-		return this.CopiarProperty;
-	}
-
-	public void setCopiarProperty( boolean CopiarProperty) {
-		this.CopiarProperty().set(CopiarProperty);
 	}
 
 	public StringProperty ArquivoProperty() {
 		return this.ArquivoProperty;
 	}
 
+	public BooleanProperty CopiarProperty() {
+		return this.CopiarProperty;
+	}
+
 	public void setArquivoProperty(final java.lang.String ArquivoProperty) {
 		this.ArquivoProperty().set(ArquivoProperty);
+	}
+
+	public void setCopiarProperty(final boolean CopiarProperty) {
+		this.CopiarProperty().set(CopiarProperty);
 	}
 
 }
