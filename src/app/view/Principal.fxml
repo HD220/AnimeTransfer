@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TreeItem?>
+
+<AnchorPane fx:id="fmprincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.control.SampleController">
+	<children>
+		<Label layoutX="14.0" layoutY="14.0" text="Caminho de Origem" />
+		<TextField fx:id="origem" layoutX="132.0" layoutY="10.0" onAction="#change_origem" onChange="#action_origem" prefHeight="25.0" prefWidth="252.0" />
+		<Button fx:id="btorigem" layoutX="392.0" layoutY="10.0" mnemonicParsing="false" onAction="#action_btorigem" prefHeight="25.0" prefWidth="67.0" text="Pesquisar" />
+		<TableView fx:id="table" layoutX="14.0" layoutY="46.0" prefHeight="217.0" prefWidth="445.0">
+			<columns>
+				<TableColumn fx:id="tbcopiar" prefWidth="22.0" text="Copiar">
+					<graphic>
+						<CheckBox fx:id="check" mnemonicParsing="false" onAction="#action_checkbox" />
+					</graphic>
+				</TableColumn>
+				<TableColumn fx:id="tbarquivo" prefWidth="422.0" text="Caminho" />
+			</columns>
+		</TableView>
+		<Button fx:id="bttransferir" layoutX="392.0" layoutY="309.0" mnemonicParsing="false" onAction="#action_bttransferir" prefHeight="25.0" prefWidth="67.0" text="Transferir" />
+		<TextField fx:id="destino" layoutX="132.0" layoutY="273.0" onAction="#change_destino" onChange="#action_destino" prefHeight="25.0" prefWidth="252.0" />
+		<Label layoutX="14.0" layoutY="277.0" text="Caminho do Destino" />
+		<Button fx:id="btdestino" layoutX="392.0" layoutY="273.0" mnemonicParsing="false" onAction="#action_btdestino" prefHeight="25.0" prefWidth="67.0" text="Pesquisar" />
+		<Label fx:id="lbstatus" layoutX="14.0" layoutY="301.0" prefHeight="17.0" prefWidth="370.0" text="Status:" wrapText="true" />
+		<Label fx:id="lbdir" layoutX="14.0" layoutY="320.0" prefHeight="17.0" prefWidth="370.0" wrapText="true" />
+		<ProgressBar fx:id="progressBar" layoutX="14.0" layoutY="343.0" prefHeight="18.0" prefWidth="445.0" progress="0.0" />
+	</children>
+</AnchorPane>
