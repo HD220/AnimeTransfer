@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.control.TreeItem?>
 
-<AnchorPane fx:id="fmprincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.control.PrincipalController">
+<AnchorPane fx:id="fmprincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.control.SampleController">
 	<children>
 		<Label layoutX="14.0" layoutY="14.0" text="Caminho de Origem" />
 		<TextField fx:id="origem" layoutX="132.0" layoutY="10.0" onAction="#change_origem" onChange="#action_origem" prefHeight="25.0" prefWidth="252.0" />
@@ -19,8 +19,7 @@
 						<CheckBox fx:id="check" mnemonicParsing="false" onAction="#action_checkbox" />
 					</graphic>
 				</TableColumn>
-				<TableColumn fx:id="tbarquivo" prefWidth="338.0" text="Anime" />
-            	<TableColumn fx:id="tbstatus" prefWidth="84.0" text="Status" />
+				<TableColumn fx:id="tbarquivo" prefWidth="422.0" text="Caminho" />
 			</columns>
 		</TableView>
 		<Button fx:id="bttransferir" layoutX="392.0" layoutY="309.0" mnemonicParsing="false" onAction="#action_bttransferir" prefHeight="25.0" prefWidth="67.0" text="Transferir" />
